@@ -1,18 +1,16 @@
-:root {
-    --banner-size: 12em;
-}
-
+/* Every element's size calculations will include padding and borders */
 html {
     box-sizing: border-box;
 }
 
+/* All text will be of the font Calibri */
 body {
     font-family: Calibri, Roboto, sans-serif;
 }
 
 #page-banner {
     position: fixed;
-    min-height: var(--banner-size);
+    min-height: 25vh;
 
     margin: auto;
     width: 100%;
@@ -25,13 +23,23 @@ body {
 }
 
 section {
-    padding-top: 27em;
+    padding-top: 40vh;
 }
 
 header + section {
-    padding-top: var(--banner-size);
+    padding-top: 25vh;
 }
 
 #skills-interests {
-    padding-bottom: 8em;
+    padding-bottom: 15vh;
+}
+
+.resume-section {
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+}
+
+.section-wrapper {
+    float: left;
+    width: 50%;
 }
