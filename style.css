@@ -3,42 +3,75 @@ html {
     box-sizing: border-box;
 }
 
-/* All text will be of the font Calibri */
+/* Sets default font, margin, and background color */
 body {
-    font-family: Calibri, Roboto, sans-serif;
+    margin: 0;
+
+    font-family: Quicksand, sans-serif;
+
+    background-color:#C2EEE9;
 }
 
+/* Creates a fixed page banner */
 #page-banner {
     position: fixed;
-    min-height: 25vh;
+    min-height: 40vh;
 
     margin: auto;
     width: 100%;
     text-align: center;
 
-    border-style: solid;
-    border-color: black;
-
-    background-color: aqua;
+    background-color: #487995;
+    color: white;
 }
 
+/* Creates a horizontal navigation bar */ 
+#navigation {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #487995;
+}
+
+.link {
+    float: left;
+}
+
+.link a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.link a:hover {
+    background-color: #243C4A;
+}
+
+/* Adds padding to sections in order to create some space */
 section {
-    padding-top: 40vh;
-}
+    padding-top: 45vh;
 
-header + section {
-    padding-top: 25vh;
+    max-height: 40vh;
 }
 
 #skills-interests {
-    padding-bottom: 15vh;
+    padding-bottom: 45vh;
 }
 
-.resume-section {
-    border-bottom-style: solid;
-    border-bottom-width: thin;
+/* Adds borders to the sections */
+.section-header {
+    padding-top: 3vh;
+
+    font-family: 'Segoe UI', sans-serif;
+
+    border-top-style: solid;
+    border-top-width: thin;
+    border-top-color: black;
 }
 
+/* Put some of the sections side-by-side */
 .section-wrapper {
     float: left;
     width: 50%;
